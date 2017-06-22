@@ -2397,18 +2397,18 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Article">Article</a></span>
     </div>
 	
-	<!-- BEGIN OPI Propose -->
+	<!-- BEGIN OPI Propose 
 	<div typeof="rdf:Class" resource="http://schema.org/Warning">
       <span class="h" property="rdfs:label">Warning</span>
       <span property="rdfs:comment">a warning for the user described in the handbook</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
-    </div>
-	
+    </div>-->
+	<!-- 
 	<div typeof="rdf:Class" resource="http://schema.org/ProblemSituation">
       <span class="h" property="rdfs:label">ProblemSituation</span>
       <span property="rdfs:comment">A troubleshooting guide for the user if something is wrong with the product</span>
       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>	  
-    </div>
+    </div>--> 
 	
 	<div typeof="rdf:Class" resource="http://schema.org/Instruction">
       <span class="h" property="rdfs:label">Instruction</span>
@@ -2433,6 +2433,16 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
     <div typeof="rdfs:Class" resource="http://schema.org/APIReference">
       <span class="h" property="rdfs:label">APIReference</span>
       <span property="rdfs:comment">Reference documentation for application programming interfaces (APIs).</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
+    </div>
+	<div typeof="rdfs:Class" resource="http://schema.org/Warning">
+      <span class="h" property="rdfs:label">Warning</span>
+      <span property="rdfs:comment">a warning text for the user e.g don´t throw the device down the floor</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
+    </div>
+	<div typeof="rdfs:Class" resource="http://schema.org/ProblemSituation">
+      <span class="h" property="rdfs:label">ProblemSituation</span>
+      <span property="rdfs:comment">A troubleshooting guide for the user if something is wrong with the product</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
     </div>
 
@@ -3415,12 +3425,12 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/CreateAction">CreateAction</a></span>
     </div>
 
-	
+
 	<!-- BEGIN OPI Propose Properties -->
     <div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
       <span class="h" property="rdfs:label">InstructionStep</span>
-      <span property="rdfs:comment">that´s the comment for an instructionStep</span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+      <span property="rdfs:comment">Text for InstructionStepText</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/InstructionStep">InstructionStep</a></span>
 	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
@@ -3436,16 +3446,29 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Action">Action</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
+
 	<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
       <span class="h" property="rdfs:label">ProblemSituation</span>
       <span property="rdfs:comment">that´s the comment for a problem situation</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
+		<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
+      <span class="h" property="rdfs:label">ProblemSituation</span>
+      <span property="rdfs:comment">that´s the comment for a problem situation text</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/ProblemSituation">TechArticle</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
 	<div typeof="rdf:Property" resource="http://schema.org/Warning">
       <span class="h" property="rdfs:label">Warning</span>
       <span property="rdfs:comment">that´s the comment for a warning</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/Warning">
+      <span class="h" property="rdfs:label">Warning Text</span>
+      <span property="rdfs:comment">Warning Text</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Warning">Warning</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>	
 	
@@ -3779,6 +3802,7 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/APIReference">APIReference</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
+
     <div typeof="rdf:Property" resource="http://schema.org/executableLibraryName">
       <span class="h" property="rdfs:label">executableLibraryName</span>
       <span property="rdfs:comment">Library file name e.g., mscorlib.dll, system.web.dll.</span>
