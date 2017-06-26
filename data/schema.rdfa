@@ -2397,18 +2397,20 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Article">Article</a></span>
     </div>
 	
-	<!-- BEGIN OPI Propose 
+	<!-- BEGIN OPI Propose -->
+	
+	
 	<div typeof="rdf:Class" resource="http://schema.org/Warning">
       <span class="h" property="rdfs:label">Warning</span>
       <span property="rdfs:comment">a warning for the user described in the handbook</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
-    </div>-->
-	<!-- 
+    </div>
+	
 	<div typeof="rdf:Class" resource="http://schema.org/ProblemSituation">
       <span class="h" property="rdfs:label">ProblemSituation</span>
       <span property="rdfs:comment">A troubleshooting guide for the user if something is wrong with the product</span>
       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>	  
-    </div>--> 
+    </div>
 	
 	<div typeof="rdf:Class" resource="http://schema.org/Instruction">
       <span class="h" property="rdfs:label">Instruction</span>
@@ -3430,14 +3432,27 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
     <div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
       <span class="h" property="rdfs:label">InstructionStep</span>
       <span property="rdfs:comment">Text for InstructionStepText</span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/InstructionStep">InstructionStep</a></span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
 	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
+	<div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
+      <span class="h" property="rdfs:label">InstructionStepText</span>
+      <span property="rdfs:comment">Text for InstructionStepText</span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/InstructionStep">InstructionStep</a></span>
+	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div> 
 	<div typeof="rdf:Property" resource="http://schema.org/Instruction">
       <span class="h" property="rdfs:label">Instruction</span>
       <span property="rdfs:comment">that´s the comment for an instruction</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/Instruction">
+      <span class="h" property="rdfs:label">InstructionText</span>
+      <span property="rdfs:comment">that´s the comment for an instruction text</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Instruction">Instruction</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
 	<div typeof="rdf:Property" resource="http://schema.org/maintainAction">
@@ -3446,7 +3461,12 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Action">Action</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
-
+		<div typeof="rdf:Property" resource="http://schema.org/maintainAction">
+      <span class="h" property="rdfs:label">maintainActionText</span>
+      <span property="rdfs:comment">that´s the comment for an maintaining action text</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/maintainAction">maintainAction</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
 	<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
       <span class="h" property="rdfs:label">ProblemSituation</span>
       <span property="rdfs:comment">that´s the comment for a problem situation</span>
@@ -3454,9 +3474,9 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
 		<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
-      <span class="h" property="rdfs:label">ProblemSituation</span>
+      <span class="h" property="rdfs:label">ProblemSituationText</span>
       <span property="rdfs:comment">that´s the comment for a problem situation text</span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/ProblemSituation">TechArticle</a></span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/ProblemSituation">ProblemSituation </a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
 	<div typeof="rdf:Property" resource="http://schema.org/Warning">
@@ -3473,6 +3493,7 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
     </div>	
 	
 	<!-- END OPI Propose Properties -->
+	
     <div typeof="rdf:Property" resource="http://schema.org/schemaVersion">
       <span class="h" property="rdfs:label">schemaVersion</span>
       <span property="rdfs:comment">Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application. </span>
