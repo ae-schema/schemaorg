@@ -3467,13 +3467,13 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/maintainAction">maintainAction</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
-	<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
+<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
       <span class="h" property="rdfs:label">ProblemSituation</span>
       <span property="rdfs:comment">that´s the comment for a problem situation</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
-    </div>
-		<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
+    </div> 
+	<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
       <span class="h" property="rdfs:label">ProblemSituationText</span>
       <span property="rdfs:comment">that´s the comment for a problem situation text</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/ProblemSituation">ProblemSituation </a></span>
