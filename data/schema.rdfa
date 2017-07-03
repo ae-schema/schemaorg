@@ -3423,9 +3423,40 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span property="rdfs:comment">The act of authoring written creative content.</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/CreateAction">CreateAction</a></span>
     </div>
-
-
-	<!-- BEGIN OPI Propose Properties -->
+<!---beginn handbook properties-->
+	<div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
+      <span class="h" property="rdfs:label">InstructionStep</span>
+      <span property="rdfs:comment">Part of an Instruction</span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Handbook">Handbook</a></span>
+	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div> 
+	<div typeof="rdf:Property" resource="http://schema.org/Instruction">
+      <span class="h" property="rdfs:label">InstructionText</span>
+      <span property="rdfs:comment">Instructions from the handbook for the user</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Handbook">Handbook</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/maintainAction">
+      <span class="h" property="rdfs:label">maintainAction</span>
+      <span property="rdfs:comment">a maintaining action for the device like swapping the filter</span>
+      	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Action">Action</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
+      <span class="h" property="rdfs:label">ProblemSituation</span>
+      <span property="rdfs:comment">Troubleshooting text</span>
+     	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Handbook">Handbook</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div> 
+	<div typeof="rdf:Property" resource="http://schema.org/Warning">
+      <span class="h" property="rdfs:label">Warning</span>
+      <span property="rdfs:comment">a warning text like don´t throw the device against the wall</span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Handbook">Handbook</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<!---beginn handbook properties-->
+	<!-- BEGIN OPI Propose Properties 
 
 	<div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
       <span class="h" property="rdfs:label">InstructionStep</span>
