@@ -3423,7 +3423,7 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span property="rdfs:comment">The act of authoring written creative content.</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/CreateAction">CreateAction</a></span>
     </div>
-<!---beginn handbook properties-->
+<!---beginn handbook properties--
 	<div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
       <span class="h" property="rdfs:label">InstructionStep</span>
       <span property="rdfs:comment">Part of an Instruction</span>
