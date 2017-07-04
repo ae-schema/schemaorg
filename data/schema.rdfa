@@ -2397,7 +2397,7 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Article">Article</a></span>
     </div>
 	
-	<!-- BEGIN OPI Propose -->
+	<!-- BEGIN OPI Propose 
 	
 	
 	<div typeof="rdf:Class" resource="http://schema.org/Warning">
@@ -2430,17 +2430,11 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Action">Action</a></span>
 	</div>
 	
-	<!-- END OPI Propose -->
+ END OPI Propose -->
 
     <div typeof="rdfs:Class" resource="http://schema.org/APIReference">
       <span class="h" property="rdfs:label">APIReference</span>
       <span property="rdfs:comment">Reference documentation for application programming interfaces (APIs).</span>
-       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
-    </div>
-	
-	<div typeof="rdfs:Class" resource="http://schema.org/Warning">
-      <span class="h" property="rdfs:label">Warning</span>
-      <span property="rdfs:comment">a warning text for the user e.g don´t throw the device down the floor</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
     </div>
 	
@@ -3457,9 +3451,7 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span property="rdfs:comment">a warning text like don´t throw the device against the wall</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
-    </div>
-
-	
+    </div>	
 	<!-- END OPI Propose Properties -->
 	
     <div typeof="rdf:Property" resource="http://schema.org/schemaVersion">
