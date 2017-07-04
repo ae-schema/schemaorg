@@ -2398,9 +2398,15 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
     </div>
 	
 	<!-- BEGIN OPI Propose -->
+		
+	  <div typeof="rdfs:Class" resource="http://schema.org/Handbook">
+      <span class="h" property="rdfs:label">Handbook</span>
+      <span property="rdfs:comment">A handbook</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">Handbook</a></span>
+    </div>
+
 	
-	
-	<div typeof="rdf:Class" resource="http://schema.org/Warning">
+<!-- 	<div typeof="rdf:Class" resource="http://schema.org/Warning">
       <span class="h" property="rdfs:label">Warning</span>
       <span property="rdfs:comment">a warning for the user described in the handbook</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
@@ -2428,8 +2434,12 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span class="h" property="rdfs:label">maintainAction</span>
       <span property="rdfs:comment">a maintaining action for the user described in the handbook</span>
       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Action">Action</a></span>
-	</div>
-	
+	</div> 
+		<div typeof="rdfs:Class" resource="http://schema.org/Warning">
+      <span class="h" property="rdfs:label">Warning</span>
+      <span property="rdfs:comment">a warning text for the user e.g don´t throw the device down the floor</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
+    </div>-->
 	<!-- END OPI Propose -->
 
     <div typeof="rdfs:Class" resource="http://schema.org/APIReference">
@@ -2438,11 +2448,7 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
     </div>
 	
-	<div typeof="rdfs:Class" resource="http://schema.org/Warning">
-      <span class="h" property="rdfs:label">Warning</span>
-      <span property="rdfs:comment">a warning text for the user e.g don´t throw the device down the floor</span>
-       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
-    </div>
+
 	
     <div typeof="rdfs:Class" resource="http://schema.org/Code">
       <span class="h" property="rdfs:label">Code</span>
@@ -3423,7 +3429,8 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span property="rdfs:comment">The act of authoring written creative content.</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/CreateAction">CreateAction</a></span>
     </div>
-<!---beginn handbook properties--
+<!---beginn handbook properties-->
+
 	<div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
       <span class="h" property="rdfs:label">InstructionStep</span>
       <span property="rdfs:comment">Part of an Instruction</span>
@@ -3455,9 +3462,10 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
 	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Handbook">Handbook</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
-	<!---beginn handbook properties-->
-	<!-- BEGIN OPI Propose Properties 
-
+	
+	<!---end handbook properties-->
+	<!-- BEGIN OPI Propose Properties -->
+<!--
 	<div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
       <span class="h" property="rdfs:label">InstructionStep</span>
       <span property="rdfs:comment">Part of an Instruction</span>
@@ -3489,7 +3497,7 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
-
+-->
 	
 	<!-- END OPI Propose Properties -->
 	
