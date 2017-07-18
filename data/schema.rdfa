@@ -2403,27 +2403,27 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
     </div>
     <div typeof="rdfs:Class" resource="http://schema.org/InstructionStep">
       <span class="h" property="rdfs:label">InstructionStep</span>
-      <span property="rdfs:comment">Reference documentation for application programming interfaces (APIs).</span>
+      <span property="rdfs:comment">Instruction Step Class</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
     </div>
     <div typeof="rdfs:Class" resource="http://schema.org/Warning">
       <span class="h" property="rdfs:label">Warning</span>
-      <span property="rdfs:comment">Reference documentation for applicationf (APIs).</span>
+      <span property="rdfs:comment">Warning Class</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
     </div>
     <div typeof="rdfs:Class" resource="http://schema.org/ProblemSituation">
       <span class="h" property="rdfs:label">ProblemSituation</span>
-      <span property="rdfs:comment">Reference documentation for application programming interfaces (APIs).</span>
+      <span property="rdfs:comment">Problem Situation Class</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
     </div>
     <div typeof="rdfs:Class" resource="http://schema.org/Instruction">
       <span class="h" property="rdfs:label">Instruction</span>
-      <span property="rdfs:comment">Reference documeninstructionces (APIs).</span>
+      <span property="rdfs:comment">Instruction Class</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
     </div>
     <div typeof="rdfs:Class" resource="http://schema.org/MaintainAction">
       <span class="h" property="rdfs:label">MaintainAction</span>
-      <span property="rdfs:comment">maintain bleshooting, specifications, etc.</span>
+      <span property="rdfs:comment">maintain action class</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Action">Action</a></span>
     </div>
 	
@@ -3405,7 +3405,7 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span class="h" property="rdfs:label">WriteAction</span>
       <span property="rdfs:comment">The act of authoring written creative content.</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/CreateAction">CreateAction</a></span>
-    </div><!--
+    </div>
 	<div typeof="rdf:Property" resource="http://schema.org/instructionStepText">
       <span class="h" property="rdfs:label">instructionStepText</span>
       <span property="rdfs:comment">Part of an Instruction</span>
@@ -3413,34 +3413,34 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
 	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div> 
-	<div typeof="rdf:Property" resource="http://schema.org/instruction">
-      <span class="h" property="rdfs:label">InstructionText</span>
+	<div typeof="rdf:Property" resource="http://schema.org/instructionText">
+      <span class="h" property="rdfs:label">instructionText</span>
       <span property="rdfs:comment">Instructions from the handbook for the user</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Instruction">Instruction</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
 	 <link property="rdfs:subPropertyOf" href="http://schema.org/hasPart" />
     </div>
-	<div typeof="rdf:Property" resource="http://schema.org/maintainAction">
-      <span class="h" property="rdfs:label">maintainAction</span>
+	<div typeof="rdf:Property" resource="http://schema.org/maintainActionText">
+      <span class="h" property="rdfs:label">maintainActionText</span>
       <span property="rdfs:comment">a maintaining action for the device like swapping the filter</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Action">Action</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
-<div typeof="rdf:Property" resource="http://schema.org/problemSituation">
-      <span class="h" property="rdfs:label">ProblemSituation</span>
+<div typeof="rdf:Property" resource="http://schema.org/problemSituationText">
+      <span class="h" property="rdfs:label">problemSituationText</span>
       <span property="rdfs:comment">Troubleshooting text</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/ProblemSituation">ProblemSituation</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div> 
 	<div typeof="rdf:Property" resource="http://schema.org/warningText">
-      <span class="h" property="rdfs:label">WarningText</span>
+      <span class="h" property="rdfs:label">warningText</span>
       <span property="rdfs:comment">a warning text like don´t throw the device against the wall</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Warning">Warning</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>	
 	<div typeof="rdf:Property" resource="http://schema.org/severityLevel">
       <span class="h" property="rdfs:label">severityLevel</span>
-      <span property="rdfs:comment">how severe is the warning? like </span>
+      <span property="rdfs:comment">how severe is the warning? </span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Warning">Warning</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>	-->
