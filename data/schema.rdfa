@@ -2396,46 +2396,35 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span property="rdfs:comment">A technical article - Example: How-to (task) topics, step-by-step, procedural troubleshooting, specifications, etc.</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Article">Article</a></span>
     </div>
-	
-	<!-- BEGIN OPI Propose 
-	
-	
-	<div typeof="rdf:Class" resource="http://schema.org/Warning">
-      <span class="h" property="rdfs:label">Warning</span>
-      <span property="rdfs:comment">a warning for the user described in the handbook</span>
-       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
-    </div>
-	
-	<div typeof="rdf:Class" resource="http://schema.org/ProblemSituation">
-      <span class="h" property="rdfs:label">ProblemSituation</span>
-      <span property="rdfs:comment">A troubleshooting guide for the user if something is wrong with the product</span>
-      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>	  
-    </div>
-	
-	<div typeof="rdf:Class" resource="http://schema.org/Instruction">
-      <span class="h" property="rdfs:label">Instruction</span>
-      <span property="rdfs:comment">A troubleshooting guide for the user if something is wrong with the product</span>
-      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
-    </div>
-
-	<div typeof="rdf:Class" resource="http://schema.org/InstructionStep">
-      <span class="h" property="rdfs:label">InstructionStep</span>
-      <span property="rdfs:comment">an instructionstep for the user described in the handbook</span>
-      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
-	</div>
-	
-	<div typeof="rdf:Class" resource="http://schema.org/maintainAction">
-      <span class="h" property="rdfs:label">maintainAction</span>
-      <span property="rdfs:comment">a maintaining action for the user described in the handbook</span>
-      <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Action">Action</a></span>
-	</div>
-	
- END OPI Propose -->
-
     <div typeof="rdfs:Class" resource="http://schema.org/APIReference">
       <span class="h" property="rdfs:label">APIReference</span>
       <span property="rdfs:comment">Reference documentation for application programming interfaces (APIs).</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/InstructionStep">
+      <span class="h" property="rdfs:label">InstructionStep</span>
+      <span property="rdfs:comment">Reference documentation for application programming interfaces (APIs).</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/Warning">
+      <span class="h" property="rdfs:label">Warning</span>
+      <span property="rdfs:comment">Reference documentation for applicationf (APIs).</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/ProblemSituation">
+      <span class="h" property="rdfs:label">ProblemSituation</span>
+      <span property="rdfs:comment">Reference documentation for application programming interfaces (APIs).</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/Instruction">
+      <span class="h" property="rdfs:label">Instruction</span>
+      <span property="rdfs:comment">Reference documeninstructionces (APIs).</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/TechArticle">TechArticle</a></span>
+    </div>
+    <div typeof="rdfs:Class" resource="http://schema.org/MaintainAction">
+      <span class="h" property="rdfs:label">MaintainAction</span>
+      <span property="rdfs:comment">maintain bleshooting, specifications, etc.</span>
+       <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Action">Action</a></span>
     </div>
 	
     <div typeof="rdfs:Class" resource="http://schema.org/Code">
@@ -3416,23 +3405,20 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span class="h" property="rdfs:label">WriteAction</span>
       <span property="rdfs:comment">The act of authoring written creative content.</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/CreateAction">CreateAction</a></span>
-    </div>
-
-
-	<!-- BEGIN OPI Propose Properties -->
-
-	<div typeof="rdf:Property" resource="http://schema.org/InstructionStep">
-      <span class="h" property="rdfs:label">InstructionStep</span>
+    </div><!--
+	<div typeof="rdf:Property" resource="http://schema.org/instructionStepText">
+      <span class="h" property="rdfs:label">instructionStepText</span>
       <span property="rdfs:comment">Part of an Instruction</span>
-	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/InstructionStep">InstructionStep</a></span>
 	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div> 
-	<div typeof="rdf:Property" resource="http://schema.org/Instruction">
+	<div typeof="rdf:Property" resource="http://schema.org/instruction">
       <span class="h" property="rdfs:label">InstructionText</span>
       <span property="rdfs:comment">Instructions from the handbook for the user</span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Instruction">Instruction</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+	 <link property="rdfs:subPropertyOf" href="http://schema.org/hasPart" />
     </div>
 	<div typeof="rdf:Property" resource="http://schema.org/maintainAction">
       <span class="h" property="rdfs:label">maintainAction</span>
@@ -3440,19 +3426,24 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Action">Action</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>
-<div typeof="rdf:Property" resource="http://schema.org/ProblemSituation">
+<div typeof="rdf:Property" resource="http://schema.org/problemSituation">
       <span class="h" property="rdfs:label">ProblemSituation</span>
       <span property="rdfs:comment">Troubleshooting text</span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/ProblemSituation">ProblemSituation</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div> 
-	<div typeof="rdf:Property" resource="http://schema.org/Warning">
-      <span class="h" property="rdfs:label">Warning</span>
+	<div typeof="rdf:Property" resource="http://schema.org/warningText">
+      <span class="h" property="rdfs:label">WarningText</span>
       <span property="rdfs:comment">a warning text like don´t throw the device against the wall</span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/TechArticle">TechArticle</a></span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Warning">Warning</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
     </div>	
-	<!-- END OPI Propose Properties -->
+	<div typeof="rdf:Property" resource="http://schema.org/severityLevel">
+      <span class="h" property="rdfs:label">severityLevel</span>
+      <span property="rdfs:comment">how severe is the warning? like </span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Warning">Warning</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>	-->
 	
     <div typeof="rdf:Property" resource="http://schema.org/schemaVersion">
       <span class="h" property="rdfs:label">schemaVersion</span>
