@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 
 application: sdo-schemaorgae
->>>>>>> ec2f24442ed0d1c4f6a64805fbddc882f3fd9a5a
 
 version: 1
 module: default
