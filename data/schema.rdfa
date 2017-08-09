@@ -2426,7 +2426,6 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span property="rdfs:comment">maintain action class</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Action">Action</a></span>
     </div>
-	
     <div typeof="rdfs:Class" resource="http://schema.org/Code">
       <span class="h" property="rdfs:label">Code</span>
       <link property="http://schema.org/supersededBy" href="http://schema.org/SoftwareSourceCode"/>
@@ -3405,22 +3404,30 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span class="h" property="rdfs:label">WriteAction</span>
       <span property="rdfs:comment">The act of authoring written creative content.</span>
        <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/CreateAction">CreateAction</a></span>
-    </div><!--
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/instructionSteps">
+      <span class="h" property="rdfs:label">instructionSteps</span>
+      <span property="rdfs:comment">Instructions from the handbook for the user</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Instruction">Instruction</a></span>
+	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/InstructionStep">InstructionStep</a></span>
+	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
+    </div>
+	<div typeof="rdf:Property" resource="http://schema.org/severityLevel">
+      <span class="h" property="rdfs:label">severityLevel</span>
+      <span property="rdfs:comment">how severe is the warning? on a scale from 1-3, where 1 is the lowest</span>
+      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Warning">Warning</a></span>
+      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Number">Number</a></span>
+    </div>
+	<!--
+	//these were just tests, can be deleted// 
 	<div typeof="rdf:Property" resource="http://schema.org/instructionStepText">
       <span class="h" property="rdfs:label">instructionStepText</span>
       <span property="rdfs:comment">Part of an Instruction</span>
 	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/InstructionStep">InstructionStep</a></span>
 	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
-    </div> -->
-	<div typeof="rdf:Property" resource="http://schema.org/instructionSteps">
-      <span class="h" property="rdfs:label">instructionSteps</span>
-      <span property="rdfs:comment">Instructions from the handbook for the user</span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Instruction">Instruction</a></span>
-	  <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/InstructionStep">Instruction</a></span>
-	  <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/ItemList">schema:ItemList</a></span>
-      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
-    </div><!--
+    </div>
 	<div typeof="rdf:Property" resource="http://schema.org/maintainActionText">
       <span class="h" property="rdfs:label">maintainActionText</span>
       <span property="rdfs:comment">a maintaining action for the device like swapping the filter</span>
@@ -3438,14 +3445,8 @@ The place is __open__ if the [[opens]] property is specified, and __closed__ oth
       <span property="rdfs:comment">a warning text like don´t throw the device against the wall</span>
       <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Warning">Warning</a></span>
       <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
-    </div>	-->
-	<div typeof="rdf:Property" resource="http://schema.org/severityLevel">
-      <span class="h" property="rdfs:label">severityLevel</span>
-      <span property="rdfs:comment">how severe is the warning? </span>
-      <span>Domain: <a property="http://schema.org/domainIncludes" href="http://schema.org/Warning">Warning</a></span>
-      <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/Text">Text</a></span>
-    </div>	-->
-	
+    </div>-->
+
     <div typeof="rdf:Property" resource="http://schema.org/schemaVersion">
       <span class="h" property="rdfs:label">schemaVersion</span>
       <span property="rdfs:comment">Indicates (by URL or string) a particular version of a schema used in some CreativeWork. For example, a document could declare a schemaVersion using an URL such as http://schema.org/version/2.0/ if precise indication of schema version was required by some application. </span>
